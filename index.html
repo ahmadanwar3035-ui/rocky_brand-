@@ -1,0 +1,1276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Read Like Rocky</title>
+    <meta
+      name="description"
+      content="Expert-guided reading lessons and parent support."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Kalam:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="rocky-site" id="home">
+      <!-- HEADER -->
+      <header class="site-header">
+        <a aria-label="Read Like Rocky home" class="brand" href="#home">
+          <img
+            alt="Rocky the golden retriever"
+            height="816"
+            src="assets/rocky-mascot.png"
+            width="816"
+          />
+          <span
+            ><strong>Read Like <em>Rocky</em></strong
+            ><span class="brand-tagline"
+              >Rocky loves to read. He just needed the right training.</span
+            ></span
+          >
+        </a>
+        <nav aria-label="Main navigation" class="nav">
+          <a class="active" href="#home">Home</a>
+          <a href="#why-rocky">Why Read Like Rocky</a>
+          <a href="#program">Nancy’s Reading Products</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#community">Join Community</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+        <a class="header-cta" href="#assessment"
+          >Get Your Free<br />
+          Assessment</a
+        >
+        <button
+          aria-label="Toggle navigation"
+          class="menu-button button"
+          onclick="document.querySelector('.nav').classList.toggle('open')"
+        >
+          <svg
+            aria-hidden="true"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M4 5h16"></path>
+            <path d="M4 12h16"></path>
+            <path d="M4 19h16"></path>
+          </svg>
+        </button>
+      </header>
+      <main>
+        <!-- SECTION 1: HERO (video, heading, photo) -->
+        <section aria-labelledby="hero-title" class="hero-section">
+          <div class="welcome-video">
+            <img
+              alt="Smiling reading educator in a blue blouse"
+              class="educator-photo"
+              height="1024"
+              src="assets/nancy.jpg"
+              width="1024"
+            />
+            <div class="meet-label">Meet<br />Dr. Nancy Barker</div>
+            <svg
+              class="welcome-arrow"
+              viewBox="0 0 100 100"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="11"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M10 14c26-6 58 12 66 46" />
+              <path
+                d="M60 58l17 24 15-28z"
+                fill="currentColor"
+                stroke-width="5"
+              />
+            </svg>
+            <!-- data-video: apni video ka path ya YouTube link yahan likho.
+                 Agar file na mile to sample video automatically chalegi. -->
+            <button
+              aria-label="Watch Dr. Nancy’s welcome video"
+              class="play-button button"
+              data-video="assets/welcome-video.mp4"
+            >
+              <svg
+                aria-hidden="true"
+                fill="currentColor"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"
+                ></path>
+              </svg>
+            </button>
+            <div class="video-caption">
+              <strong>Watch Dr. Nancy’s Welcome Video</strong><span>2:48</span>
+            </div>
+          </div>
+          <div class="hero-copy">
+            <h1 id="hero-title">
+              Meet the Educator<br /><span>Who Taught the Teachers</span>
+            </h1>
+            <div class="yellow-underline"></div>
+            <p class="hero-intro">
+              For more than 40 years, Dr. Nancy Barker has helped shape how
+              educators teach children. Now she’s bringing that experience
+              directly to parents — to help your child become a confident
+              reader.
+            </p>
+            <div class="credentials">
+              <div class="credential">
+                <span class="credential-icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 3 1 9l11 6 9-4.9V17h2V9z" />
+                    <path
+                      d="M5.2 13.4v3.7c0 1.7 3.1 3.2 6.8 3.2s6.8-1.5 6.8-3.2v-3.7L12 17z"
+                    /></svg
+                ></span>
+                <h3>Former Director of K–12 Curriculum &amp; Instruction</h3>
+                <p>
+                  Helped shape educational programs across an entire district.
+                </p>
+              </div>
+              <div class="credential">
+                <span class="credential-icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <circle cx="12" cy="7" r="3.6" />
+                    <path d="M5.8 21c0-4.4 2.8-7.2 6.2-7.2s6.2 2.8 6.2 7.2z" />
+                    <circle cx="4.4" cy="9.5" r="2.4" />
+                    <circle cx="19.6" cy="9.5" r="2.4" />
+                    <path
+                      d="M.5 19c0-2.7 1.5-4.5 3.9-4.5.9 0 1.600.2 2.200.6-1 1.3-1.5 2.5-1.7 3.9zM23.5 19c0-2.7-1.5-4.5-3.9-4.5-.9 0-1.600.2-2.200.6 1 1.3 1.5 2.5 1.7 3.9z"
+                    /></svg
+                ></span>
+                <h3>Trained Teachers and Educational Leaders</h3>
+                <p>Led professional development and seminars for teachers.</p>
+              </div>
+              <div class="credential">
+                <span class="credential-icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 2 2 7v2h20V7z" />
+                    <rect x="4" y="10.5" width="3" height="7.5" />
+                    <rect x="10.5" y="10.5" width="3" height="7.5" />
+                    <rect x="17" y="10.5" width="3" height="7.5" />
+                    <rect x="2" y="19.5" width="20" height="2.5" /></svg
+                ></span>
+                <h3>Former University Educator</h3>
+                <p>
+                  Adjunct professor at Pepperdine University and California
+                  Lutheran University.
+                </p>
+              </div>
+              <div class="credential">
+                <span class="credential-icon"
+                  ><svg
+                    aria-hidden="true"
+                    fill="currentColor"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                    ></path></svg
+                ></span>
+                <h3>40+ Years in Education</h3>
+                <p>
+                  Doctor of Education in Educational Leadership, Administration
+                  &amp; Policy — Pepperdine University.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-photo">
+            <img
+              alt="A boy and Rocky reading a book together"
+              height="1024"
+              src="assets/rocky-reading.jpg"
+              width="1024"
+            />
+            <p class="handwritten photo-note">
+              Better<br />Readers<br />Brighter<br />Futures!
+              <svg
+                aria-hidden="true"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"
+                ></path>
+              </svg>
+            </p>
+          </div>
+        </section>
+
+        <!-- SECTION 1: FREE ASSESSMENT BAR -->
+        <div class="first-assessment">
+          <section
+            aria-label="Free reading assessment"
+            class="assessment"
+            id="assessment"
+          >
+            <svg
+              aria-hidden="true"
+              class="assessment-icon"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect>
+              <path
+                d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+              ></path>
+              <path d="M12 11h4"></path>
+              <path d="M12 16h4"></path>
+              <path d="M8 11h.01"></path>
+              <path d="M8 16h.01"></path>
+            </svg>
+            <div class="assessment-copy">
+              <h2>Get Your Free Reading Assessment</h2>
+              <p>
+                A quick and easy way to find out where your child may be<br
+                  class="desktop-break"
+                />
+                falling behind — and how to help them move forward.
+              </p>
+            </div>
+            <form
+              class="assessment-form"
+              onsubmit="
+                event.preventDefault();
+                this.querySelector('.privacy').textContent =
+                  'Your details have not been sent. Assessment delivery is not connected yet.';
+              "
+            >
+              <div class="assessment-fields">
+                <input
+                  aria-label="Parent name"
+                  autocomplete="name"
+                  name="parentName"
+                  placeholder="Parent Name"
+                  required
+                />
+                <input
+                  aria-label="Email address"
+                  autocomplete="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required
+                  type="email"
+                />
+                <button class="assessment-button button" type="submit">
+                  Get My Free<br />
+                  Assessment
+                  <svg
+                    aria-hidden="true"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="m9 18 6-6-6-6"></path>
+                  </svg>
+                </button>
+              </div>
+              <p class="privacy">
+                <svg
+                  aria-hidden="true"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="12" cy="16" r="1"></circle>
+                  <rect height="12" rx="2" width="18" x="3" y="10"></rect>
+                  <path d="M7 10V7a5 5 0 0 1 10 0v3"></path></svg
+                >We respect your privacy. No spam, ever.
+              </p>
+            </form>
+          </section>
+        </div>
+
+        <!-- SECTION 2: WHY CHILDREN STRUGGLE / HOW WE HELP -->
+        <section class="why-section" id="why-rocky">
+          <div class="section-heading">
+            <h2>Why Children Struggle to Read</h2>
+            <p>
+              There are many reasons children have a hard time reading. Here are
+              some of the most common:
+            </p>
+          </div>
+          <div class="reason-grid">
+            <article class="reason coral">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <ellipse cx="4.8" cy="11.2" rx="2.1" ry="2.7" />
+                <ellipse cx="9.3" cy="6" rx="2.1" ry="2.8" />
+                <ellipse cx="14.7" cy="6" rx="2.1" ry="2.8" />
+                <ellipse cx="19.2" cy="11.2" rx="2.1" ry="2.7" />
+                <path
+                  d="M12 11.5c3.4 0 6.3 3.1 6.3 6 0 2-1.6 3-3.2 3-1.3 0-2-.6-3.1-.6s-1.8.6-3.1.6c-1.6 0-3.2-1-3.2-3 0-2.9 2.9-6 6.3-6z"
+                />
+              </svg>
+              <h3>Phonics or Decoding Gaps</h3>
+              <p>Difficulty sounding out words and recognizing patterns.</p>
+            </article>
+            <article class="reason gold">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M2 4.5c3.5-1 7-.6 9.5 1.300v14.400c-2.5-1.9-6-2.3-9.5-1.300z"
+                />
+                <path
+                  d="M22 4.5c-3.5-1-7-.6-9.5 1.300v14.400c2.5-1.9 6-2.3 9.5-1.300z"
+                />
+              </svg>
+              <h3>Weak Reading Comprehension</h3>
+              <p>Can read the words but struggle to understand the meaning.</p>
+            </article>
+            <article class="reason blue">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <circle cx="12" cy="12" r="10.5" />
+                <circle cx="8.7" cy="9.6" r="1.5" fill="#fff" />
+                <circle cx="15.3" cy="9.6" r="1.5" fill="#fff" />
+                <path
+                  d="M8.3 16.800c1-1.7 2.3-2.5 3.7-2.500s2.7.8 3.7 2.5"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1.9"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <h3>Low Confidence or Frustration</h3>
+              <p>
+                Past struggles can make children feel discouraged and avoid
+                reading.
+              </p>
+            </article>
+            <article class="reason green">
+              <svg
+                aria-hidden="true"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+              <h3>Attention or Focus Challenges</h3>
+              <p>
+                Can be hard to stay focused long enough to practice and improve.
+              </p>
+            </article>
+            <article class="reason violet">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <circle cx="12" cy="7" r="3.6" />
+                <path d="M5.8 21c0-4.4 2.8-7.2 6.2-7.2s6.2 2.8 6.2 7.2z" />
+                <circle cx="4.4" cy="9.5" r="2.4" />
+                <circle cx="19.6" cy="9.5" r="2.4" />
+                <path
+                  d="M.5 19c0-2.7 1.5-4.5 3.9-4.5.9 0 1.600.2 2.200.6-1 1.3-1.5 2.5-1.7 3.9zM23.5 19c0-2.7-1.5-4.5-3.9-4.5-.9 0-1.600.2-2.200.6 1 1.3 1.5 2.5 1.7 3.9z"
+                />
+              </svg>
+              <h3>Not Knowing How to Help at Home</h3>
+              <p>
+                Many parents want to help but aren’t sure what strategies work
+                best.
+              </p>
+            </article>
+          </div>
+          <div class="section-heading help-heading">
+            <h2>How Read Like Rocky Helps</h2>
+            <p>
+              Our programs give parents the tools, knowledge, and resources to
+              help their children become confident, capable readers.
+            </p>
+          </div>
+          <div class="reason-grid">
+            <article class="reason coral">
+              <svg
+                aria-hidden="true"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="m21 21-4.34-4.34"></path>
+                <circle cx="11" cy="11" r="8"></circle>
+              </svg>
+              <h3>Identify the Problem</h3>
+              <p>
+                Pinpoint where your child may be falling behind with simple
+                assessments.
+              </p>
+            </article>
+            <article class="reason gold">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <rect x="2.5" y="13.5" width="5" height="8" rx="1" />
+                <rect x="9.5" y="8.5" width="5" height="13" rx="1" />
+                <rect x="16.5" y="2.5" width="5" height="19" rx="1" />
+              </svg>
+              <h3>Build Foundational Reading Skills</h3>
+              <p>Strengthen phonics, decoding and word recognition.</p>
+            </article>
+            <article class="reason blue">
+              <svg
+                aria-hidden="true"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12 7v14"></path>
+                <path
+                  d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"
+                ></path>
+              </svg>
+              <h3>Improve Comprehension</h3>
+              <p>Help children understand and enjoy what they read.</p>
+            </article>
+            <article class="reason green">
+              <svg
+                aria-hidden="true"
+                fill="currentColor"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                ></path>
+              </svg>
+              <h3>Strengthen Confidence</h3>
+              <p>
+                Turn frustration into progress with encouraging, step-by-step
+                support.
+              </p>
+            </article>
+            <article class="reason violet">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2.5 2 11h2.800v9.500h5.200v-6h4v6h5.200V11H22z" />
+              </svg>
+              <h3>Support Learning at Home</h3>
+              <p>
+                Give parents practical tools, strategies, and guidance to make a
+                difference.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- SECTION 3: FREE ASSESSMENT BAR (2nd) -->
+        <div class="second-assessment">
+          <section
+            aria-label="Free reading assessment"
+            class="assessment"
+            id="free-assessment"
+          >
+            <svg
+              aria-hidden="true"
+              class="assessment-icon"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect>
+              <path
+                d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+              ></path>
+              <path d="M12 11h4"></path>
+              <path d="M12 16h4"></path>
+              <path d="M8 11h.01"></path>
+              <path d="M8 16h.01"></path>
+            </svg>
+            <div class="assessment-copy">
+              <h2>Get Your Free Reading Assessment</h2>
+              <p>
+                A quick and easy way to find out where your child may be<br
+                  class="desktop-break"
+                />
+                falling behind — and how to help them move forward.
+              </p>
+            </div>
+            <form
+              class="assessment-form"
+              onsubmit="
+                event.preventDefault();
+                this.querySelector('.privacy').textContent =
+                  'Your details have not been sent. Assessment delivery is not connected yet.';
+              "
+            >
+              <div class="assessment-fields">
+                <input
+                  aria-label="Parent name"
+                  autocomplete="name"
+                  name="parentName"
+                  placeholder="Parent Name"
+                  required
+                />
+                <input
+                  aria-label="Email address"
+                  autocomplete="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required
+                  type="email"
+                />
+                <button class="assessment-button button" type="submit">
+                  Get My Free<br />
+                  Assessment
+                  <svg
+                    aria-hidden="true"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="m9 18 6-6-6-6"></path>
+                  </svg>
+                </button>
+              </div>
+              <p class="privacy">
+                <svg
+                  aria-hidden="true"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="12" cy="16" r="1"></circle>
+                  <rect height="12" rx="2" width="18" x="3" y="10"></rect>
+                  <path d="M7 10V7a5 5 0 0 1 10 0v3"></path></svg
+                >We respect your privacy. No spam, ever.
+              </p>
+            </form>
+          </section>
+        </div>
+
+        <!-- SECTION 4: READING SUCCESS PROGRAM -->
+        <section class="program-section" id="program">
+          <header class="program-heading">
+            <h2>The Read Like Rocky Reading Success Program</h2>
+            <p>
+              A complete, expert-guided reading program that gives your child<br />
+              structured lessons and gives you the tools, guidance, and support
+              to help them succeed.
+            </p>
+          </header>
+          <div class="program-content">
+            <div class="program-visual">
+              <img
+                alt="Read Like Rocky workbook, reading lesson screen, books, and parent teaching guide"
+                height="1024"
+                loading="lazy"
+                src="assets/reading-program.jpg"
+                width="1536"
+              />
+              <span class="progress-badge"
+                >Engaging<br />Lessons<br />for Real<br />Progress!</span
+              >
+            </div>
+            <div class="program-features">
+              <article class="program-feature">
+                <span class="feature-icon coral"
+                  ><svg
+                    aria-hidden="true"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M12 7v14"></path>
+                    <path
+                      d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"
+                    ></path></svg
+                ></span>
+                <div>
+                  <h3>60 Reading Lessons &amp; Activities</h3>
+                  <p>
+                    Step-by-step instruction and practice matched to your
+                    child’s reading needs.
+                  </p>
+                </div>
+              </article>
+              <article class="program-feature">
+                <span class="feature-icon green"
+                  ><svg
+                    aria-hidden="true"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M5 21v-6"></path>
+                    <path d="M12 21V9"></path>
+                    <path d="M19 21V3"></path></svg
+                ></span>
+                <div>
+                  <h3>Your Child’s Recommended Learning Path</h3>
+                  <p>
+                    Discover which reading skills need attention and where to
+                    begin.
+                  </p>
+                </div>
+              </article>
+              <article class="program-feature">
+                <span class="feature-icon violet"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <circle cx="12" cy="7" r="3.6" />
+                    <path d="M5.8 21c0-4.4 2.8-7.2 6.2-7.2s6.2 2.8 6.2 7.2z" />
+                    <circle cx="4.4" cy="9.5" r="2.4" />
+                    <circle cx="19.6" cy="9.5" r="2.4" />
+                    <path
+                      d="M.5 19c0-2.7 1.5-4.5 3.9-4.5.9 0 1.600.2 2.200.6-1 1.3-1.5 2.5-1.7 3.9zM23.5 19c0-2.7-1.5-4.5-3.9-4.5-.9 0-1.600.2-2.200.6 1 1.3 1.5 2.5 1.7 3.9z"
+                    /></svg
+                ></span>
+                <div>
+                  <h3>Parent Teaching Guides</h3>
+                  <p>
+                    Learn exactly how to help your child practice reading at
+                    home.
+                  </p>
+                </div>
+              </article>
+              <article class="program-feature" id="community">
+                <span class="feature-icon gold"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <circle cx="12" cy="7" r="3.6" />
+                    <path d="M5.8 21c0-4.4 2.8-7.2 6.2-7.2s6.2 2.8 6.2 7.2z" />
+                    <circle cx="4.4" cy="9.5" r="2.4" />
+                    <circle cx="19.6" cy="9.5" r="2.4" />
+                    <path
+                      d="M.5 19c0-2.7 1.5-4.5 3.9-4.5.9 0 1.600.2 2.200.6-1 1.3-1.5 2.5-1.7 3.9zM23.5 19c0-2.7-1.5-4.5-3.9-4.5-.9 0-1.600.2-2.200.6 1 1.3 1.5 2.5 1.7 3.9z"
+                    /></svg
+                ></span>
+                <div>
+                  <h3>30 Days of Expert Parent Support</h3>
+                  <p>
+                    Join our private parent community, participate in
+                    teacher-led learning sessions, and attend scheduled group
+                    Q&amp;A sessions with Dr. Nancy Barker.
+                  </p>
+                </div>
+              </article>
+              <p class="handwritten support-line">
+                Real Teachers. Real Answers. Real Support.
+              </p>
+              <p class="included-line">Your first 30 days are included.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 5: ABOUT DR. NANCY + TESTIMONIALS -->
+        <section class="about-testimonials">
+          <div class="about-nancy" id="about">
+            <div class="about-photo">
+              <img
+                alt="Reading educator portrait"
+                height="1024"
+                loading="lazy"
+                src="assets/nancy.jpg"
+                width="1024"
+              />
+              <span class="handwritten"
+                >Children<br />Change<br />the World<br />One Reader<br />at a
+                Time!<svg
+                  aria-hidden="true"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="11" cy="4" r="2"></circle>
+                  <circle cx="18" cy="8" r="2"></circle>
+                  <circle cx="20" cy="16" r="2"></circle>
+                  <path
+                    d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z"
+                  ></path></svg
+              ></span>
+            </div>
+            <div class="about-copy">
+              <h2>Meet Dr. Nancy Barker</h2>
+              <p>
+                Dr. Nancy Barker has worked in education for over 40 years and
+                brings a wealth of experience as a teacher, school leader, and
+                former Assistant Superintendent. She holds three master’s
+                degrees and an Ed.D., and has dedicated her career to helping
+                children become stronger, more confident readers. Her work has
+                impacted thousands of students, parents, and educators, and she
+                continues to share practical resources that make a real
+                difference in children’s lives.
+              </p>
+              <p class="handwritten experience">
+                Experience. Compassion. A Brighter Future for Every Child.
+              </p>
+            </div>
+          </div>
+          <div class="testimonials" id="testimonials">
+            <h2>What Parents &amp; Professionals Are Saying</h2>
+            <div class="testimonial-videos">
+              <div class="testimonial-video">
+                <img
+                  alt="Parent testimonial"
+                  height="1024"
+                  loading="lazy"
+                  src="assets/nancy.jpg"
+                  width="1024"
+                />
+                <button
+                  aria-label="Watch parent testimonial"
+                  class="small-play button"
+                  data-video="assets/testimonial-parent.mp4"
+                >
+                  <svg
+                    aria-hidden="true"
+                    fill="currentColor"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"
+                    ></path>
+                  </svg>
+                </button>
+                <span
+                  >Parent testimonial<svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+                    <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+                    <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+                    <path d="M16 21h3a2 2 0 0 0 2-2v-3" /></svg
+                ></span>
+              </div>
+              <div class="testimonial-video">
+                <img
+                  alt="Educator testimonial"
+                  height="1024"
+                  loading="lazy"
+                  src="assets/nancy.jpg"
+                  width="1024"
+                 
+                />
+                <button
+                  aria-label="Watch educator testimonial"
+                  class="small-play button"
+                  data-video="assets/testimonial-educator.mp4"
+                >
+                  <svg
+                    aria-hidden="true"
+                    fill="currentColor"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"
+                    ></path>
+                  </svg>
+                </button>
+                <span
+                  >Educator testimonial<svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+                    <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+                    <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+                    <path d="M16 21h3a2 2 0 0 0 2-2v-3" /></svg
+                ></span>
+              </div>
+            </div>
+            <div class="quote-grid">
+              <blockquote>
+                <span>“</span>
+                <p>
+                  “Read Like Rocky gave our son the tools and confidence he
+                  needed. We’ve seen such a positive change!”
+                </p>
+                <cite>— Melissa T., Parent</cite>
+              </blockquote>
+              <blockquote>
+                <span>“</span>
+                <p>
+                  “The practical resources are fantastic. As a teacher, I highly
+                  recommend them for families.”
+                </p>
+                <cite>— James R., Teacher</cite>
+              </blockquote>
+              <blockquote>
+                <span>“</span>
+                <p>
+                  “It’s a reading specialist. Nancy is everything I look for.
+                  Clear, kind, and truly makes a difference.”
+                </p>
+                <cite>— Dr. Susan L., School Administrator</cite>
+              </blockquote>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- SECTION 6: FOOTER -->
+      <footer class="site-footer" id="contact">
+        <div class="footer-top">
+          <a
+            aria-label="Read Like Rocky home"
+            class="brand brand-small"
+            href="#home"
+          >
+            <img
+              alt="Rocky the golden retriever"
+              height="816"
+              src="assets/rocky-mascot.png"
+              width="816"
+            />
+            <span
+              ><strong>Read Like Rocky</strong
+              ><span class="brand-tagline"
+                >Rocky Loves to Read.<br />He Just Needed the Right
+                Training!</span
+              ></span
+            >
+          </a>
+          <nav aria-label="Footer navigation">
+            <a href="#home">Home</a>
+            <a href="#why-rocky">Why Read Like Rocky</a>
+            <a href="#program">Our Program</a>
+            <a href="#about">About Dr. Nancy</a>
+            <a href="#program">Schools &amp; Educators</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#community">Join Community</a>
+            <a
+              href="#contact"
+              onclick="alert('This information has not been supplied yet.')"
+              >Contact Us</a
+            >
+          </nav>
+          <div class="social-links">
+            <a
+              href="#contact"
+              aria-label="Facebook"
+              onclick="alert('This information has not been supplied yet.')"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="12" fill="#1877f2" />
+                <path
+                  fill="#fff"
+                  d="M13.4 19.5v-6.2h2.1l.4-2.5h-2.5V9.2c0-.7.3-1.2 1.3-1.2h1.3V5.8c-.2 0-1-.1-1.9-.1-2 0-3.3 1.2-3.3 3.4v1.7H8.7v2.5h2.1v6.2z"
+                /></svg
+            ></a>
+            <a
+              href="#contact"
+              aria-label="Instagram"
+              onclick="alert('This information has not been supplied yet.')"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <defs>
+                  <linearGradient id="ig" x1="0" y1="1" x2="1" y2="0">
+                    <stop offset="0" stop-color="#fdb54a" />
+                    <stop offset=".45" stop-color="#e1306c" />
+                    <stop offset="1" stop-color="#7a3bd1" />
+                  </linearGradient>
+                </defs>
+                <rect width="24" height="24" rx="6.5" fill="url(#ig)" />
+                <rect
+                  x="6"
+                  y="6"
+                  width="12"
+                  height="12"
+                  rx="3.6"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1.7"
+                />
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="2.8"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1.7"
+                />
+                <circle cx="16" cy="8" r=".9" fill="#fff" /></svg
+            ></a>
+            <a
+              href="#contact"
+              aria-label="YouTube"
+              onclick="alert('This information has not been supplied yet.')"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect
+                  x="0"
+                  y="3.5"
+                  width="24"
+                  height="17"
+                  rx="5"
+                  fill="#ff0000"
+                />
+                <path fill="#fff" d="M9.8 8.6l6 3.4-6 3.4z" /></svg
+            ></a>
+          </div>
+          <p>Helping children become stronger,<br />more confident readers.</p>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Read Like Rocky. All rights reserved.</p>
+          <div>
+            <button
+              class="button"
+              onclick="alert('This information has not been supplied yet.')"
+            >
+              Privacy Policy
+            </button>
+            <span>|</span>
+            <button
+              class="button"
+              onclick="alert('This information has not been supplied yet.')"
+            >
+              Terms of Service
+            </button>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- VIDEO POPUP: videos play here when a play button is clicked -->
+    <div class="video-modal" id="videoModal" hidden>
+      <button class="video-close" aria-label="Close video">&times;</button>
+      <div class="video-box" id="videoBox"></div>
+    </div>
+
+    <script>
+      /* =====================================================
+         VIDEO POPUP
+         Har play button par data-video="..." hai.
+         Apni file (assets/video.mp4) ya YouTube link wahan likho.
+         Agar file na mile to neeche wali sample videos chal jayengi.
+         ===================================================== */
+      (function () {
+        var modal = document.getElementById("videoModal");
+        var box = document.getElementById("videoBox");
+
+        var FALLBACK_VIDEOS = [
+          "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+          "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+          "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+        ];
+
+        function openVideo(url) {
+          var yt = url.match(/(?:youtu\.be\/|v=|embed\/)([\w-]{11})/);
+          if (yt) {
+            box.innerHTML =
+              '<iframe src="https://www.youtube.com/embed/' +
+              yt[1] +
+              '?autoplay=1&rel=0" allow="autoplay; fullscreen" allowfullscreen></iframe>';
+          } else {
+            box.innerHTML =
+              '<video src="' + url + '" controls autoplay playsinline></video>';
+            var video = box.querySelector("video");
+            var attempt = 0;
+            video.addEventListener("error", function () {
+              if (attempt < FALLBACK_VIDEOS.length) {
+                video.src = FALLBACK_VIDEOS[attempt++];
+                video.play().catch(function () {});
+              }
+            });
+          }
+          modal.hidden = false;
+        }
+
+        function closeVideo() {
+          modal.hidden = true;
+          box.innerHTML = "";
+        }
+
+        document.querySelectorAll("[data-video]").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            openVideo(btn.dataset.video);
+          });
+        });
+
+        modal.addEventListener("click", function (e) {
+          if (e.target === modal || e.target.classList.contains("video-close"))
+            closeVideo();
+        });
+
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") closeVideo();
+        });
+      })();
+
+      /* =====================================================
+         ANIMATIONS: scroll reveal, header shadow, progress bar,
+         active nav link
+         ===================================================== */
+      (function () {
+        var root = document.documentElement;
+        root.classList.add("js");
+
+        var reduceMotion = window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches;
+
+        /* [selector, animation, stagger-ms] */
+        var revealMap = [
+          [".why-section .section-heading", "up", 0],
+          [".why-section .reason", "up", 90],
+          [".second-assessment .assessment", "zoom", 0],
+          [".program-heading", "up", 0],
+          [".program-visual", "left", 0],
+          [".program-feature", "right", 120],
+          [".support-line", "up", 0],
+          [".included-line", "up", 0],
+          [".about-photo", "left", 0],
+          [".about-copy h2", "up", 0],
+          [".about-copy > p", "up", 150],
+          [".testimonials h2", "up", 0],
+          [".testimonial-video", "zoom", 150],
+          [".quote-grid blockquote", "up", 150],
+          [".site-footer .footer-top", "up", 0],
+          [".site-footer .footer-bottom", "up", 0],
+        ];
+
+        var targets = [];
+        revealMap.forEach(function (item) {
+          document.querySelectorAll(item[0]).forEach(function (el, i) {
+            el.setAttribute("data-reveal", item[1]);
+            el.style.setProperty("--delay", (i % 5) * item[2] + "ms");
+            targets.push(el);
+          });
+        });
+
+        if ("IntersectionObserver" in window && !reduceMotion) {
+          var io = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("in-view");
+                  io.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.15, rootMargin: "0px 0px -6% 0px" },
+          );
+          targets.forEach(function (el) {
+            io.observe(el);
+          });
+        } else {
+          targets.forEach(function (el) {
+            el.classList.add("in-view");
+          });
+        }
+
+        /* scroll progress bar + header shadow */
+        var bar = document.createElement("div");
+        bar.className = "scroll-progress";
+        bar.setAttribute("aria-hidden", "true");
+        document.body.appendChild(bar);
+
+        var header = document.querySelector(".site-header");
+        var ticking = false;
+
+        function onScroll() {
+          var h = document.documentElement;
+          var max = h.scrollHeight - h.clientHeight;
+          var p = max > 0 ? h.scrollTop / max : 0;
+          bar.style.transform = "scaleX(" + p + ")";
+          if (header) header.classList.toggle("scrolled", h.scrollTop > 12);
+          ticking = false;
+        }
+
+        window.addEventListener(
+          "scroll",
+          function () {
+            if (!ticking) {
+              ticking = true;
+              requestAnimationFrame(onScroll);
+            }
+          },
+          { passive: true },
+        );
+        onScroll();
+
+        /* active nav link follows scroll */
+        var navLinks = Array.prototype.slice.call(
+          document.querySelectorAll(".nav a"),
+        );
+        var sections = navLinks
+          .map(function (a, i) {
+            var id = a.getAttribute("href");
+            var el =
+              id && id.charAt(0) === "#" ? document.querySelector(id) : null;
+            return el ? { el: el, link: navLinks[i] } : null;
+          })
+          .filter(Boolean);
+
+        if ("IntersectionObserver" in window) {
+          var navIO = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                if (!entry.isIntersecting) return;
+                var found = sections.filter(function (s) {
+                  return s.el === entry.target;
+                })[0];
+                if (found) {
+                  navLinks.forEach(function (a) {
+                    a.classList.toggle("active", a === found.link);
+                  });
+                }
+              });
+            },
+            { rootMargin: "-35% 0px -55% 0px" },
+          );
+          sections.forEach(function (s) {
+            navIO.observe(s.el);
+          });
+        }
+
+        /* mobile menu closes after a link is tapped */
+        navLinks.forEach(function (a) {
+          a.addEventListener("click", function () {
+            var nav = document.querySelector(".nav");
+            if (nav) nav.classList.remove("open");
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
